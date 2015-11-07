@@ -127,7 +127,8 @@ include_directories(
 
 ## Declare a C++ executable
 # add_executable(pub_sub_demo_node src/pub_sub_demo_node.cpp)
-add_executable(pub_sub_demo_node src/pub_sub_demo_node.cpp)
+add_executable(node1 src/demo_node1.cpp)
+add_executable(node2 src/demo_node2.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
@@ -137,7 +138,8 @@ add_executable(pub_sub_demo_node src/pub_sub_demo_node.cpp)
 # target_link_libraries(pub_sub_demo_node
 #   ${catkin_LIBRARIES}
 # )
-target_link_libraries(pub_sub_demo_node ${catkin_LIBRARIES})
+target_link_libraries(node1 ${catkin_LIBRARIES})
+target_link_libraries(node2 ${catkin_LIBRARIES})
 
 #############
 ## Install ##

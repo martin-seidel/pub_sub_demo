@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<launch>
+
+   <group ns="pub_sub_demo">
+
+      <node name="demo1" pkg="pub_sub_demo" type="node1" output="screen"/>
+      <node name="demo2" pkg="pub_sub_demo" type="node2"/>
+
+   </group>
+
+</launch>
